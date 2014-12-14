@@ -22,7 +22,6 @@ public class Pr_05_AngleUnitConverter {
                 System.out.printf("%.6f deg", deg);
             }
         }
-        //test
         scan.close();
 	}
 }
