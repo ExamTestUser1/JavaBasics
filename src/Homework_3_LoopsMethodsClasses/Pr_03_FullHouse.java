@@ -28,7 +28,7 @@ public class Pr_03_FullHouse {
 
             }
         }
-        
+        //test
         System.out.println();
         System.out.println(count + " full houses");
 	}
