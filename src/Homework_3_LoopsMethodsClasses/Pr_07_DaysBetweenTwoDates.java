@@ -17,7 +17,7 @@ public class Pr_07_DaysBetweenTwoDates {
 
         Duration days = Duration.between(firstDate, secondDate);
         System.out.println(days.toDays());
-        
+        //test
         scan.close();
 	}
 }
