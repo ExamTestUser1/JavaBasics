@@ -12,10 +12,11 @@ public class Pr_4_TheSmallestOfThreeNumbers {
             nums[i] = scan.nextFloat();
         }
         Arrays.sort(nums);
-        System.out.println(nums[0]);
-        
-        scan.close();
 
+        if ((nums[0]) % 1 == 0) {
+            System.out.println((int)(nums[0]));
+        } else {
+            System.out.println(nums[0]);
+        }
 	}
-
 }

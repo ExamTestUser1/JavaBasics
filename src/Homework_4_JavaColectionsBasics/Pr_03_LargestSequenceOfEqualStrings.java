@@ -21,6 +21,7 @@ public class Pr_03_LargestSequenceOfEqualStrings {
         Map.Entry<String, Integer> maxSequence = null;
         for (Map.Entry<String, Integer> sequence : sequences.entrySet()) {
             if (maxSequence == null || sequence.getValue() > maxSequence.getValue()) {
+                maxSequence = sequence;
             }
         }
 

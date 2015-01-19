@@ -14,10 +14,7 @@ public class Pr_8_CountOfEqualBitPairs {
             if ((num >> i & 3) == 3 || (num >> i & 3) == 0)
                 count++;
         }
-
         System.out.println(count);
-
-        scan.close();
 	}
 
 }

@@ -17,7 +17,5 @@ public class Pr_02_GenerateThreeLetterWords {
                 }
             }
         }
-        
-        scan.close();
 	}
 }

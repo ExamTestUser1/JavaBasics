@@ -20,8 +20,5 @@ public class Pr_01_SymmetricNumbersInRange {
             else if (num.length() > 1 && num.charAt(0) == num.charAt(num.length() - 1))
                     System.out.print(num + " ");
         }
-        
-        scan.close();
 	}
-
 }

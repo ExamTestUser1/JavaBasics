@@ -16,9 +16,5 @@ public class Pr_7_CountOfBitsOne {
         }
 
         System.out.println(count);
-        
-        scan.close();
-
 	}
-
 }

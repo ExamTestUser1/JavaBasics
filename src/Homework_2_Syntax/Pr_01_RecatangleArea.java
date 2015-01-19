@@ -11,7 +11,7 @@ public class Pr_01_RecatangleArea {
         float b = Float.parseFloat(scan.next("\\w+"));
 
         float c = a * b;
-        System.out.println("The area of a rectangle is %f " + c);
+        System.out.printf("The area of a rectangle is %f ", c);
 
         scan.close();
 	}
