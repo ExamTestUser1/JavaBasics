@@ -12,6 +12,7 @@ public class _02_CurrentDateTime {
 		/*pyrvi nachin*/
         Date date = new Date();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
         df.setTimeZone(TimeZone.getDefault());
         System.out.println("Current date and time is: " + df.format(date));
 
