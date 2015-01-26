@@ -9,7 +9,6 @@ public class Pr_12_CardsFrequencies {
         Scanner scan = new Scanner(System.in);
         String[] input = scan.nextLine().split("\\W+");
         Map<String, Integer> faces = new TreeMap<String, Integer>();
-        int faceCount = 0;
         int index;
 
         for (String face : input) {
@@ -22,17 +21,17 @@ public class Pr_12_CardsFrequencies {
 
         for (int i = 0; i < input.length; i++) {
             if (i == faces.size())
-                break;
+            break;
             for (String face : faces.keySet()) {
-                if (face.equals(input[i]) && faceCount == 0) {
+                if (face.equals(input[i])) {
                     index = faces.get(face);
                     float num = index*(float)(10);
                     System.out.printf("%1$s -> %2$.2f", face, num);
                     System.out.print("% \n");
-                    faceCount = 1;
+                    //faceCount = 1;
                 }
             }
-            faceCount = 0;
+            //faceCount = 0;
         }
     }
 }
