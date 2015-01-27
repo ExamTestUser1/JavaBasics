@@ -41,7 +41,7 @@ public class Exam_26May2014_Pr_4 {
                 uniqueCount = 0;
             }
         }
-//test
+//test//test1
         for (int i = 0; i < unique.size(); i++) {
             for (String item : strings.keySet()){
                 if (unique.get(i).equals(item)) {
