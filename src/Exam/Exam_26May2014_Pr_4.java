@@ -42,6 +42,7 @@ public class Exam_26May2014_Pr_4 {
             }
         }
 //test//test1
+        //velio test
         for (int i = 0; i < unique.size(); i++) {
             for (String item : strings.keySet()){
                 if (unique.get(i).equals(item)) {
