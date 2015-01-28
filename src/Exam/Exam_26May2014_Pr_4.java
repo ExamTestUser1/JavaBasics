@@ -3,6 +3,7 @@ package Exam;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class Exam_26May2014_Pr_4 {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class Exam_26May2014_Pr_4 {
         String[] input = scan.nextLine().split("\\D+");
         ArrayList<String> couples = new ArrayList<String>();
         TreeMap<String, Integer> strings = new TreeMap<String, Integer>();
-        ArrayList<String> unique = new ArrayList<>();
+
 
         int uniqueCount = 0;
 
@@ -28,28 +29,13 @@ public class Exam_26May2014_Pr_4 {
             strings.put(couple, count + 1);
         }
 
+        TreeSet<String> printedCouples = new TreeSet<>();
         for (int i = 0; i < couples.size(); i++) {
-            for (String item : strings.keySet()) {
-                if (couples.get(i).equals(item)) {
-                    for (String uni : unique) {
-                        if (item.equals(uni))
-                            uniqueCount++;
-                    }
-                    if (uniqueCount == 0)
-                        unique.add(item);
-                }
-                uniqueCount = 0;
+            if (! printedCouples.contains(couples.get(i))){
+                float frequency = (float) strings.get(couples.get(i)) / (couples.size());
+                System.out.printf("%1$s -> %2$.2f%%\n", couples.get(i), frequency*100);
             }
-        }
-//test//test1
-        //velio test
-        for (int i = 0; i < unique.size(); i++) {
-            for (String item : strings.keySet()){
-                if (unique.get(i).equals(item)) {
-                    System.out.printf("%1$s -> %2$.2f", item, (strings.get(item) * percentPerOne));
-                    System.out.print("% \n");
-                }
-            }
+            printedCouples.add(couples.get(i));
         }
     }
 }

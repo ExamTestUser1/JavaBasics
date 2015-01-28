@@ -19,7 +19,7 @@ public class Pr_2_TriangleArea {
             System.out.println("0");
 
         else
-            System.out.println("The area of the triangle is: " + area);
+            System.out.printf("The area of the triangle is: %.0f", area);
         
         scan.close();
 

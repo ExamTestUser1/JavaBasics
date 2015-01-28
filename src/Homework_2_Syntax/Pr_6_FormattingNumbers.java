@@ -6,9 +6,9 @@ public class Pr_6_FormattingNumbers {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        float b = scan.nextFloat();
-        float c = scan.nextFloat();
+        int a = Integer.parseInt(scan.next());
+        float b = Float.parseFloat(scan.next());
+        float c = Float.parseFloat(scan.next());
 
         String hexA = Integer.toHexString(a).toUpperCase();
         String binaryA = "0000000000".substring(Integer.toBinaryString(a).length()) + Integer.toBinaryString(a);

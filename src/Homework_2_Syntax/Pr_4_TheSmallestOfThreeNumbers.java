@@ -9,7 +9,7 @@ public class Pr_4_TheSmallestOfThreeNumbers {
 		Scanner scan = new Scanner(System.in);
         float[] nums = new float[3];
         for (int i = 0; i < nums.length; i++) {
-            nums[i] = scan.nextFloat();
+            nums[i] = Float.parseFloat(scan.next());
         }
         Arrays.sort(nums);
 
