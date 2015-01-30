@@ -16,7 +16,7 @@ public class Pr_5_ArrayTest {
 
             String command = scn.next();
 
-            while (!command.equals("over")) {
+            while (!command.equals("stop")) { // the string at the last line is "stop"
                 String line = scn.nextLine().trim();
                 int[] params = new int[2];
 
