@@ -3,14 +3,13 @@ package DebuggingLab;
 import java.util.Scanner;
 
 public class Pr_4_Substring {
-
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
         String text = input.nextLine();
         int jump = Integer.parseInt(input.nextLine());
 
-        char search = 'р';
+        char search = 'p';
         boolean hasMatch = false;
 
         for (int i = 0; i < text.length(); i++) {
@@ -18,7 +17,7 @@ public class Pr_4_Substring {
             if (text.charAt(i) == search) {
                 hasMatch = true;
 
-                int endIndex = jump;
+                int endIndex = i+jump+1;	//+1
 
                 if (endIndex > text.length()) {
                     endIndex = text.length();
