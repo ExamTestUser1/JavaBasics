@@ -1,5 +1,6 @@
 package Homework_4_JavaColectionsBasics;
 
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -9,6 +10,7 @@ public class Pr_12_CardsFrequencies {
         Scanner scan = new Scanner(System.in);
         String[] input = scan.nextLine().split("\\W+");
         Map<String, Integer> faces = new TreeMap<String, Integer>();
+        float frequencyPerOne = (float)100 / input.length;
         int index;
 
         for (String face : input) {
@@ -19,19 +21,16 @@ public class Pr_12_CardsFrequencies {
             faces.put(face, count + 1);
         }
 
+        HashSet<String> temp = new HashSet<>();
         for (int i = 0; i < input.length; i++) {
-            if (i == faces.size())
-            break;
-            for (String face : faces.keySet()) {
-                if (face.equals(input[i])) {
-                    index = faces.get(face);
-                    float num = index*(float)(10);
-                    System.out.printf("%1$s -> %2$.2f", face, num);
-                    System.out.print("% \n");
-                    //faceCount = 1;
-                }
+            if (!temp.contains(input[i])){
+                temp.add(input[i]);
+
+                index = faces.get(input[i]);
+                float frequency = index*frequencyPerOne;
+                System.out.printf("%1$s -> %2$.2f", input[i], frequency);
+                System.out.print("% \n");
             }
-            //faceCount = 0;
         }
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Pr_02_GenerateThreeLetterWords {
 
 	public static void main(String[] args) {
-		System.out.print("Enter one, two or three no repeating characters, as string: ");
+		System.out.print("Enter an non-repeating characters, as string: ");
         Scanner scan = new Scanner(System.in);
         String chars = scan.next();
         String[] letters = chars.split("");

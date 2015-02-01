@@ -1,6 +1,8 @@
 package Homework_4_JavaColectionsBasics;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -10,12 +12,12 @@ public class Pr_05_CountAllWords {
         String text = scan.nextLine();
         int count = 0;
 
-        Pattern textPattern = Pattern.compile("\\w+");
-        Matcher matcher = textPattern.matcher(text);
+            Pattern textPattern = Pattern.compile("\\w+");
+            Matcher matcher = textPattern.matcher(text);
 
-        while (matcher.find()){
-            count++;
-        }
+            while (matcher.find()) {
+                count++;
+            }
         System.out.println(count);
     }
 }

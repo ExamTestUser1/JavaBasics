@@ -8,13 +8,13 @@ import java.io.IOException;
 public class Pr_08_SumNumbersFromTextFile {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("src/Homework_3_LoopsMethodsClasses/input.txt"));
-        double sum = 0;
+        long sum = 0;
 
         try {
             String line = br.readLine();
 
             while (line != null) {
-                sum += Double.parseDouble(line);
+                sum += Long.parseLong(line);
                 line = br.readLine();
             }
 
@@ -23,7 +23,7 @@ public class Pr_08_SumNumbersFromTextFile {
         }
 
         catch (IOException ex) {
-        System.out.println("error");
+        System.out.println("Error");
         }
     }
 }

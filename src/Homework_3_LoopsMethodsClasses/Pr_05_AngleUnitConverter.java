@@ -15,11 +15,11 @@ public class Pr_05_AngleUnitConverter {
 
             if (measure.equals("deg")){
                 double rad = (angle * Math.PI) / 180;
-                System.out.printf("%.6f rad", rad);
+                System.out.printf("%.6f rad \n", rad);
             }
             else{
                 double deg = (angle * 180) / Math.PI;
-                System.out.printf("%.6f deg", deg);
+                System.out.printf("%.6f deg \n", deg);
             }
         }
 	}

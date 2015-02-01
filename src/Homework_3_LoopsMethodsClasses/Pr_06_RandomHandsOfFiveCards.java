@@ -26,7 +26,5 @@ public class Pr_06_RandomHandsOfFiveCards {
                 }
             System.out.println();
         }
-        
-        scan.close();
 	}
 }

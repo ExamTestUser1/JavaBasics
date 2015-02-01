@@ -38,6 +38,7 @@ public class Pr_04_LongestIncreasingSequence {
             System.out.print(num + " ");
         }
         System.out.println();
+        System.out.print("Longest: ");
 
         for (int num : maxSequence) {
             System.out.print(num + " ");
